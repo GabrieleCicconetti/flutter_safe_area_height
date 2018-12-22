@@ -1,8 +1,8 @@
 name: safe_area_height
 description: A plugin to get the safe area height on iOS
 version: 0.0.1
-author: Gabriele Cicconetti
-homepage:
+author: Gabriele Cicconetti <gab.0@hotmail.it>
+homepage: https://github.com/GabrieleCicconetti/flutter_safe_area_height
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
