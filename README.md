@@ -1,14 +1,22 @@
-# safe_area_height
+# safe_area_height 
 
-A plugin to get the safe area height on iOS
+Demonstrates how to use the safe_area_height plugin.
 
-## Getting Started
+## Example
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.io/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+- Import safe_area_height package;
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+Future<void> getSafeAreaHeight() async {
+    double safeAreaHeight = 0;
+    double safeAreaHeightBottom = 0;
+
+    safeAreaHeight = await SafeAreaHeight.safeAreaHeightTop;
+    safeAreaHeightBottom = await SafeAreaHeight.safeAreaHeightBottom;
+
+    setState(() {
+      _safeAreaHeight = safeAreaHeight;
+      _safeAreaHeightBottom = safeAreaHeightBottom;
+    });
+  }
+```
