@@ -4,7 +4,15 @@ Demonstrates how to use the safe_area_height plugin.
 
 ## Example
 
+- Add th dependecies in pubspec.yaml 
+
+```
+safe_area_height: 0.0.1
+```
+
 - Import safe_area_height package;
+
+- Get the top/bottom safe area height like this:
 
 ```
 Future<void> getSafeAreaHeight() async {
